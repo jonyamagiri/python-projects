@@ -11,12 +11,21 @@ load_dotenv()
 
 email_sender = os.getenv('EMAIL_USERNAME')
 email_password = os.getenv('EMAIL_PASSWORD')
-
 email_receiver = 'viresi6427@duscore.com'
 
-subject = 'Dont forget to subsribe'
+subject = 'Welcome to Our Newsletter!'
 body = """
-When you watch a video, please hit the subsribe button
+Dear Subscriber, 
+ 
+We are so excited that you have subscribed to our newsletter! We look forward to providing you with the latest news and updates. With your subscription, we will keep you informed of upcoming events and opportunities in our community.  
+
+At iCreate, we strive for excellence in everything we do from customer service to product quality. We value your trust and loyalty, which is why its important for us that each subscriber receives only the best information available.  
+
+If there is ever anything else that we can do for you or if theres something specific about which would like more information on please don't hesitate reach out at any time -we're always here help!   
+
+Thanks again for subscribing; enjoy all of the great content coming your way soon!.    
+
+Sincerely,  iCreate Team
 """
 
 em = EmailMessage()
