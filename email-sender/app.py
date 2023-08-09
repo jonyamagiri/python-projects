@@ -12,6 +12,7 @@ load_dotenv()
 email_sender = os.getenv('EMAIL_USERNAME')
 email_password = os.getenv('EMAIL_PASSWORD')
 email_receiver = 'viresi6427@duscore.com'
+# email_receiver = '****'
 
 subject = 'Welcome to Our Newsletter!'
 body = """
