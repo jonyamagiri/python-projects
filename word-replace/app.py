@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 
+# entry point to the program
 def main():
+    '''
+    This function takes user input for a sentence and performs word replacement
+    based on user-defined criteria.
+    '''
     print("This is a simple program that helps you replace words")
     
     sentence = input("Enter your sentence: ")
@@ -12,8 +17,10 @@ def main():
     result = sentence.replace(word_to_replace, word_replacement)
     print(result)
 
+# if the program is run (instead of imported), run word-replace:
 if __name__ == "__main__":
     main()
+
 
 # alternative code that achieves the same results
 # #!/usr/bin/env python3
