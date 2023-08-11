@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 
 def email_slicer(email):
+    '''
+    Split an email address into its components: username, domain, and extension.    
+    Args:
+        email (str): The email address to be sliced.    
+    Returns:
+        tuple: A tuple containing the username, domain, and extension.
+    '''
     username, domain_part = email.split('@')
     domain_parts = domain_part.split('.')
     domain = '.'.join(domain_parts[:-1])  # Join all parts except the last one
@@ -8,6 +15,10 @@ def email_slicer(email):
     return username, domain, extension
 
 def main():
+    '''
+    Entry point of the program.
+    Parses and prints components of email addresses.
+    '''
     print('Welcome to the email slicer')
     
     while True:
